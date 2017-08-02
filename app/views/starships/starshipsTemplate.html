@@ -1,0 +1,12 @@
+<div ng-repeat='ship in data'>
+    Name: {{ship.name}}
+    <br/>
+    Model: {{ship.model}}
+    <br/>
+    Cost in Credits: {{ship.cost_in_credits}}
+    <br/>
+    Manufacturer: {{ship.manufacturer}}
+    <br/>
+    <button ui-sref='starship({id: ship.id})'>See More Info</button>
+    <hr>
+</div>

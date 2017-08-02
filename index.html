@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-app='starwars'>
+
+    <h1>This will always be displayed</h1>
+
+    <ui-view></ui-view>
+
+    <!--dependencies-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js'></script>
+    <script src='app/app.js'></script>
+    <!--views-->
+    <script src='app/views/home/homeCtrl.js'></script>
+    <script src='app/views/starships/starshipsCtrl.js'></script>
+    <script src='app/views/starship/starshipCtrl.js'></script>
+    <!--services-->
+    <script src='app/services/starshipsSvc.js'></script>
+    
+</body>
+</html>
